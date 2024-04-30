@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-3</title>
+    <link rel="stylesheet" type="" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 2000px;
+            width: 100%;
+            background-color: #1e2222;
+        }
+
+        .head-nav {
+            height: 90px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-top: 10px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .box-two {
+            display: flex;
+            justify-content: left;
+            color: white;
+            width: 50%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+        }
+
+        .box-two p {
+            margin-left: 40px;
+        }
+
+        .box-three {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(255, 255, 255, 0.648);
+            width: 20%;
+            font-weight: 400;
+            margin-left: 5%;
+        }
+
+        .box-three p {
+            letter-spacing: 0.5px;
+        }
+
+        .search-icon {
+            color: rgb(241, 41, 75);
+            font-size: 25px;
+        }
+
+        .nav-tata-logo {
+            width: 5%;
+            margin-right: -2%;
+        }
+
+        .banner {
+            margin-left: 135px;
+            margin-top: 20px;
+        }
+
+        .banner img {
+            opacity: 0.3;
+            position: relative;
+        }
+
+        .banner h1 {
+            color: #fff;
+            font-size: 70px;
+            font-family: 'Dosis', sans-serif;
+            font-weight: 400;
+            margin-left: 100px;
+            margin-top: -45px;
+            padding-bottom: 15px;
+            position: absolute;
+        }
+
+        .banner h2 {
+            color: rgba(255, 255, 255, 0.648);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            margin-left: 100px;
+            margin-top: 155px;
+            position: absolute;
+        }
+
+        #learn {
+            height: 50px;
+            width: 150px;
+            text-align: center;
+            line-height: 30px;
+            background: linear-gradient(102.57deg, #d0121e, #f84d9f 100%, #f84d9f 0);
+            font-size: 20px;
+            padding: 8px 12px;
+            margin-top: 30px;
+            margin-left: 100px;
+            color: #fff;
+            border-radius: 40px;
+            font-family: system-ui, -apple-system, BlingkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            position: absolute;
+            margin-top: 220px;
+        }
+
+        .snap-shot {
+            height: 150px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #heading {
+            font-size: 45px;
+            color: #fff;
+            font-family: 400;
+            font-family: 'Dosis', sans-serif;
+            margin-left: 80px;
+        }
+
+        .snap-shot p {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #fff;
+        }
+
+        .snap {
+            height: 120px;
+            width: 120px;
+            border: 1px solid rgb(241, 41, 75);
+            border-radius: 50%;
+            margin-top: 30px;
+            margin-left: 20px;
+            background-color: #000;
+        }
+
+        .icon {
+            margin: 5px ;
+            height: 110px;
+            width: 110px;
+            border: 1px solid;
+            border-radius: 50%;
+            overflow: clip;
+            
+        }
+
+        #icon1 {
+            background-image: url(./icon-1.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #icon2 {
+            background-image: url(./icon-2.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #icon3 {
+            background-image: url(./icon-3.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #icon4 {
+            background-image: url(./icon-4.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #icon5 {
+            background-image: url(./icon-5.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #icon6 {
+            background-image: url(./icon-6.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #icon7 {
+            background-image: url(./icon-7.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #icon8 {
+            background-image: url(./icon-8.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        footer {
+            height: 500px;
+            width: 80%;
+            margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+       }
+
+       .footer a {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(255, 255, 255, 0.648);
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .footer-item {
+            display: flex;
+            flex-direction: column;
+            gap: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head-nav">
+            <div class="logo-box">
+                <img src="./tcs-logo.svg">
+            </div>
+            <div class="box-two">
+                <p>What we do</p>
+                <p>Who we are</p>
+                <p>insights</p>
+                <p>careers</p>
+                <p>inverstore</p>
+            </div>
+            <div class="box-three">
+                <p>CONTACT US</p>
+                <P>TCS WORLDWIDE</P>
+            </div>
+            <div class="nav-search">
+                <span class="search-icon">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="nav-tata-logo">
+                <img src="./logo-tata.svg" alt="">
+            </div>
+        </div>
+        <div class="banner">
+            <h1 class="home-banner-title">TCS Survey: The future of<br>
+                operations</h1>
+            <h2>Cognitive operations to improve business performance</h2>
+            <div id="learn">Learn more</div>
+            <img src="./the-future-operations_Large.jpeg" alt="">
+        </div>
+        <div id="heading">Snapshots</div>
+        <div class="snap-shot">
+            <div class="snap">
+                <div class="icon" id="icon1">
+                    <img src="./icon-1.png" alt=""height="96"width="96">
+                </div>
+            <p>Better tickets</p>
+            </div>
+            <div class="snap">
+                <div class="icon" id="icon2">
+                    <img src="./icon-2.png" alt=""height="96"width="96">
+                </div>
+                <p>The right Track</p>
+            </div>
+            <div class="snap">
+                <div class="icon" id="icon3">
+                    <img src="./icon-3.png" alt=""height="96"width="96">
+                </div>
+                <p>Power up</p>
+            </div>
+            <div class="snap">
+                <div class="icon" id="icon4">
+                    <img src="./icon-4.png" alt=""height="96"width="96">
+                </div>
+                <p>Neutral manufacturing</p>
+            </div>
+            <div class="snap">
+                <div class="icon" id="icon5">
+                    <img src="./icon-5.png" alt=""height="96"width="96">
+                </div>
+                <p>Insurance bots</p>
+            </div>
+            <div class="snap">
+                <div class="icon" id="icon6">
+                    <img src="./icon-6.png" alt=""height="96"width="96">
+                </div>
+                <p>Ahead with Med</p>
+            </div>
+            <div class="snap">
+                <div class="icon" id="icon7">
+                    <img src="./icon-7.png" alt=""height="96"width="96">
+                </div>
+                <p>A digital sugar rush</p>
+            </div>
+            <div class="snap">
+                <div class="icon" id="icon8">
+                    <img src="./icon-8.png" alt="">
+                </div>
+                <p>Virtual worlds,
+                real privacy concerns</p>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="separation"></div>
+    <footer>
+        <div class="footer">
+            <div class="footer-item"> 
+              <a href="#">Industries</a>
+              <a href="#">Banking</a>
+              <a href="#">Capital Markets</a>
+              <a href="#">Consumer Goods and Distribution</a>
+              <a href="#">Communications, Media, and Technology</a>
+              <a href="#">Education</a>
+              <a href="#">Energy, Resources,and Utilities</a>
+              <a href="#">Healthcare</a>
+              <a href="#">High Tech</a>
+              <a href="#">Insurance</a>
+              <a href="#">Life Sciences</a>
+              <a href="#">Manufacturing</a>
+              <a href="#">Public Services</a>
+              <a href="#">Retail</a>
+              <a href="#">Travel and Logistics</a>
+            </div>
+            <div class="footer-item"> 
+                <a href="#">Services</a>
+                <a href="#">Cloud</a>
+                <a href="#">Cognitive Business Operations</a>
+                <a href="#">Consulting</a>
+                <a href="#">Cybersecurity</a>
+                <a href="#">Data and Analytics</a>
+                <a href="#">Enterprise Solutions</a>
+                <a href="#">IoT and Digital Engineering</a>
+                <a href="#">Sustainability Services</a>
+                <a href="#">TCS Interactive</a>
+                <a href="#">TCS Interactive</a>
+                <a href="#">TCS and AWS Cloud</a>
+                <a href="#">TCS Enterprise Cloud</a>
+                <a href="#">TCS and AWS Cloud</a>
+                <a href="#">TCS and Google Cloud</a>
+                <a href="#">TCS and Microsoft Cloud</a>
+            </div>
+            <div class="footer-item">
+                <a href="#">Products and Platforms</a>
+                <a href="#">TCS ADD™</a>
+                <a href="#">TCS BaNCS™</a>
+                <a href="#">TCS BFSI Platforms</a>
+                <a href="#">TCS CHROMA™</a>
+                <a href="#">TCS Customer Intelligence & Insights™</a>
+                <a href="#">TCS ERP on Cloud</a>
+            </div>
+            <div class="footer-item">
+                <a href="#">Insights</a>
+                <a href="#">Customer Stories</a> 
+                <a href="#">Cloud</a> 
+                <a href="#">Blockchain</a>
+                <a href="#">Iot</a> 
+                <a href="#">Metaverse</a>
+                <a href="#">Future of Work</a> 
+                <a href="#">Health and Wellness</a>
+                <a href="#">Sustainability</a> 
+                <a href="#">AI and ML</a>
+                <a href="#">Cybersecurity</a>
+                <a href="#">Perspectives</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
